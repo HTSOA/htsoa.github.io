@@ -1,2 +1,19 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
+<head>
+<title>Welcome to the Historical Toy Society of Australia</title>
+</head>
+<body>
+
+<div class="wrapper">
+<dir class="nav">
+<ul>
+<li>thing</li>
+<li>thing</li>
+
+</ul>
+</dir>
+</div>
+
+</body>
+</html>
