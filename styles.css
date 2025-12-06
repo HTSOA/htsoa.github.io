@@ -1,9 +1,6 @@
 <style>
 body {
   background-image: url("Background.png");
-border: 10px solid powderblue;
-  padding: 10px;
-  margin: 50px;
  cursor: url("cursor,png"), auto;
 }
 * {
