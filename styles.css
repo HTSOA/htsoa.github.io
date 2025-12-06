@@ -1,6 +1,9 @@
 body {
   background-image: url("Background.png");
- cursor: url("cursor.png"), auto;
+ cursor: url('cursor.png'), auto;
+}
+a {
+  cursor: url('cursor.png'), pointer;
 }
 * {
 text-align: center;
