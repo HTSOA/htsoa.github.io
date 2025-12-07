@@ -2,6 +2,9 @@ body {
   background-image: url("Background.png");
  cursor: url('cursor.png'), auto;
 }
+div {
+  padding: 25px 50px 75px;
+}
 a {
   cursor: url('cursor.png'), pointer;
 }
