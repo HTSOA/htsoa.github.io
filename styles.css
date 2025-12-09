@@ -1,15 +1,21 @@
+html {
+  cursor: url('cursor.png'), auto;
+  min-height: 100%;
+}
+
 body {
   background-image: url("Background.png");
- cursor: url('cursor.png'), auto;
 }
+
 div {
   padding: 25px 50px 75px;
 }
+
 a {
   cursor: url('cursor.png'), pointer;
 }
+
 * {
-text-align: center;
+  text-align: center;
   color: black;
 }
-
