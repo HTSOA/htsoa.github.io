@@ -520,6 +520,22 @@ International Exclusive needs to be confirmed. </p>
     <div id="Gen5" class="tabcontent">
       <h3>Generation 5</h3>
     </div>
+
+   <script>
+function openGen(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
   
 </body>
 </html>
