@@ -19,6 +19,12 @@
   <a href="https://htsoa.github.io/OurContributors.html">Our Contributors</a>
   </div>
 
+  <button class="tablinks" onclick="openCity(event, 'Gen1')">Generation 1</button>
+  <button class="tablinks" onclick="openCity(event, 'Gen1.5')">Generation 1.5</button>
+  <button class="tablinks" onclick="openCity(event, 'Gen2')">Generation 2</button>
+  <button class="tablinks" onclick="openCity(event, 'Gen3')">Generation 3</button>
+
+<div id="Gen1" class="tabcontent">
 <img src="MHG1.png" alt="Courtesy of Dollect">
   
 <p>Monster High was pitched to Mattel by Garrett Sander, a gay man who was surrounded by equally dedicated co workers that brought the idea to life. </p>
@@ -207,7 +213,10 @@ Picture Day Killer Style Wave 2 needs to be confirmed.</p>
   <p>After it was cancelled for the 2nd time, Monster High went into 3 year hiatus before community love, fandom, persistence and passionate designers at Mattel lead to the surprise introduction of horror movie doll collabs.</p>
   <p>This was more of a test for Mattel to see if there was actually still demand for Monster High, and the designers were proven right as the first doll in the series, Pennywise sold out.</p>
 
-<h2>2020</h2>
+</div>
+
+<div id="Gen1.5" class="tabcontent">
+<h3>2020</h3>
 <p>Horror Movie Edition Pennywise from It Doll was not released here, sold exclusively through Mattel Creations.</p>
 <p>Horror Movie Edition The Grady Twins from The Shining Dolls was not released here, sold exclusively through Mattel Creations.</p>
 
@@ -270,8 +279,13 @@ Picture Day Killer Style Wave 2 needs to be confirmed.</p>
 <p>Designer Series Corazon Marikit confirmed to not be sold here, only available through Mattel Creations.</p>
 <p>Monster High x Wednesday Bianca Doll needs to be confirmed to be sold here.</p>
 
-<img src="MHG1.png" alt="Courtesy of Dollect">
+</div>
 
+<div id="Gen2" class="tabcontent">
+
+<img src="MHG1.png" alt="Courtesy of Dollect">
+<h3>Generation 2</h3>
+  
 <p>G2 was launched to a less than stellar fanfare, fans felt betrayed and the new demographic didn't find it appealing as it wasn't ever intended for them.</p>
 <p>It also does it now patented move of lower quality dolls, reduced articulation, and sanitised look. </p>
 <p>The G2 reboot made Draculaura the main character, and set up a public school for every kind of monster to attend instead of attending a school with years of history behind it.</p>
@@ -356,7 +370,13 @@ Picture Day Killer Style Wave 2 needs to be confirmed.</p>
 <p>Transforming Ghouls confirmed to be sold here.</p>
 <p>Pop Art Ghouls Dolls needs to be confirmed to be sold here.</p>
 
+</div>
+
+<div id="Gen3" class="tabcontent">
+
 <img src="MHG3.PNG" alt="Courtesy of PeachY Reviews">
+
+<div>Generation 3</div>
   
 <p>Monster High G2 was silently dropped, and along with it's sister series, EAH, both brands became abandoned. However, due to the love of the original brand, it's dedicated fanbase and dedicated workers; it rebooted once again.</p>
 <p>The new generation, known as Generation 3 (G3) was offically announced after nearly a year of hints of Monster High's come back as well as a partial continuation of G1 as G1.5.</p>
@@ -437,7 +457,23 @@ Picture Day Killer Style Wave 2 needs to be confirmed.</p>
 <p>Bootique Hotel is currently being sold here.</p>
 <p>Cleo De Nile Self Scare Day Playset is being sold here.</p>
 
-  
+</div>
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+
 </body>
 </html>
 
