@@ -19,8 +19,16 @@
   <a href="https://htsoa.github.io/OurContributors.html">Our Contributors</a>
   </div>
 
-<h2>Fashion Dolls</h2>
-
+<div>
+  <button class="tablinks" onclick="openCity(event, 'FashionDolls')">Fashion Dolls</button>
+  <button class="tablinks" onclick="openCity(event, 'BabyDolls')">Baby Dolls</button>
+  <button class="tablinks" onclick="openCity(event, 'ToddlerDolls')">Toddler Dolls</button>
+  <button class="tablinks" onclick="openCity(event, 'SmallDolls')">Small Dolls</button>
+</div>
+  
+<div id="FashionDolls" class="tabcontent">
+  
+  <h2>Fashion Dolls</h2>
 <p><a href="https://htsoa.github.io/Barbie.html">Barbie</a></p>
 <p><a href="https://htsoa.github.io/Bratz.html">Bratz</a></p>
 <p><a href="https://htsoa.github.io/Bratzillaz.html">Bratzillaz</a></p>
@@ -56,24 +64,45 @@
 <p>Tuesday Taylor</p>
 <p>Donny & Marie Osmond</p>
 <p>Holly Hobby</p>
-<p></p>
+</div>
 
+<div id="BabyDolls" class="tabcontent">  
 <h2>Baby Dolls</h2>
 <p><a href="https://htsoa.github.io/BabyJarJums.html">Baby Jarjums</a></p>
 <p><a href="https://htsoa.github.io/BabyBorn.html">Baby Born</a></p>
 <p><a href="https://htsoa.github.io/BabyAlive.html">Baby Alive</a></p>
 <p><a href="https://htsoa.github.io/MyChild.html">My Child</a></p>
+</div>
 
-
+<div id="ToddlerDolls" class="tabcontent">    
 <h2>Toddler Dolls</h2>
 <p>PJ Sparkles</p>
 <p>Penni Secrets</p>
 <p>Lil' Miss</p>
 <p>Chatty Cathy</p>
 <p>Amazing Amy</p>
+</div>
 
+<div id="SmallDolls" class="tabcontent">  
 <h2>Small Dolls</h2>
 <p>Hollywood Dolls</p>
 <p>Little Kiddles</p>
+</div>
+
+  <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
 </body>
 </html>
