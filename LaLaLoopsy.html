@@ -21,6 +21,18 @@
 
   <p>Loops</p>
 
+<div>
+<button class="tablinks" onclick="openCity(event, 'LargeDolls')">Large Dolls</button>
+<button class="tablinks" onclick="openCity(event, 'LittleSisterDolls')">Little Sister Dolls</button>
+<button class="tablinks" onclick="openCity(event, 'Girlz')">La La Loopsy Girlz</button>
+<button class="tablinks" onclick="openCity(event, 'Minis')">Minis</button>
+<button class="tablinks" onclick="openCity(event, 'Tinies')">Tinies</button>
+<button class="tablinks" onclick="openCity(event, 'ReRelease')">Re Release</button>  
+</div>
+
+<div id="LargeDolls" class="tabcontent">
+</div>
+
 <h2>2010</h2>
 <p>Large Signature Dolls Wave 1 needs to be confirmed.</p>
 <p>Large Signature Dolls Wave 2 needs to be confirmed.</p>
@@ -62,6 +74,43 @@
 <p>Large Signature Dolls Wave 20 needs to be confirmed.</p>
 <p>Large Signature Dolls Wave 21 needs to be confirmed.</p>
 <p>Large Signature Dolls Wave 22 needs to be confirmed.</p>
+
+<div id="LittleSistserDolls" class="tabcontent">
+<p>E</p>
+</div>
+
+<div id="Girlz" class="tabcontent">
+<p>E</p>
+</div>
+
+<div id="Minis" class="tabcontent">
+<p>E</p>
+</div>
+
+<div id="Tinies" class="tabcontent">
+<p>E</p>
+</div>
+
+<div id="ReRelease" class="tabcontent">
+<p>E</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+
     
 </body>
 </html>
