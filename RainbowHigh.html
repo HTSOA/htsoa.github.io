@@ -26,7 +26,14 @@
 <p>It took MGA Entertainment a year after they were first sold in USA to be sold here in stores (WA has different schedules compared to QLD). They have somewhat maintained quicker shipments for Aus but have been dropping entire releases since the reboot.</p>
 <p>In late 2023, fans began noticing signs the line and the original series were coming to an end, including but not limited to Shadow High series 3 never making it to Australian retailers, and both the dolls and webseries were rebooted.</p>
 <p>The Rainbow World webisodes and dolls arrived in 2024, with the target audience shifting to much younger children. Reductions in doll budget and quality were immediately present; wrist and thigh articulation, and the high fashion aesthetic was lost, upsetting many older fans. Fantasy elements in style and fashion became the norm, little sisters were introduced, and almost every line has some form of DIY gimmick."</p>
+
+<div>
+<button class="tablinks" onclick="openCity(event, 'RainbowHigh')">Rainbow High</button>
+<button class="tablinks" onclick="openCity(event, 'ShadowHigh')">Shadow High</button>
+<button class="tablinks" onclick="openCity(event, 'PacificCoastHigh')">Pacific Coast High</button>
+</div>
   
+<div id="RainbbowHigh" class="tabcontent">
 <h2>2020</h2>
 
 <p>Series 1 released Australia Wide.</p>
@@ -104,7 +111,26 @@
 <p>Cool lore: Rainbow High has Poopsie, another MGA line, to thank for its inception.</p>
 <p>The Rainbow Surprise dolls, 14inch toddler-size fashion dolls, took kids and doll enthusiasts by storm with their fashion, detail and quality.</p> 
 <p>At the time, MGA was looking for their next big thing since L.O.L. Surprise, and with a lack of high quality fashion dolls on the market they capitalised on the opportunity, and the first Rainbow High prototypes appeared at the 2020 North American International Toy Fair.</p>
+</div>
+  
 <br>
-<p>Thank you to Collector Candii for her contributions to this page</p>
+<p>Thank you to Collector Candii for her contributions to this page.</p>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+
 </body>
 </html>
