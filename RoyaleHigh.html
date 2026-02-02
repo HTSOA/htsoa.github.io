@@ -18,6 +18,57 @@
   <a href="https://htsoa.github.io/OurQuestions.html">Our Questions</a>
   <a href="https://htsoa.github.io/OurContributors.html">Our Contributors</a>
   </div>
-    
+
+
+  <h2>Royale High</h2>
+  
+<div>
+    <button class="tablinks" onclick="openCity(event, 'FashionDolls')">Fashion Dolls</button>
+  <button class="tablinks" onclick="openCity(event, 'Miniatures')">Miniatures</button>
+</div>
+
+
+<div id="FashionDolls" class="tabcontent">
+
+  
+  <h2>2024</h2>
+
+<h2>2025</h2>
+
+</div>
+
+<div id="Miniatures" class="tabcontent">
+
+  
+  <h2>2024</h2>
+
+<h2>2025</h2>
+
+</div>
+
+  
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+
+
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5BGHLSF16"></script> 
+  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-W5BGHLSF16'); </script>
+
+  
 </body>
 </html>
