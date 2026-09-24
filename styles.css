@@ -44,9 +44,9 @@ a {
   color: white;
 }
 
-div.image: {
-   content:url(CANSFlag.png);
-}​
+div.picture1 {
+   background-image:url('CANSFlag.png');
+}
 
 .tab {
   overflow: hidden;
